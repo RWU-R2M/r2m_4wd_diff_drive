@@ -1,7 +1,7 @@
 version: "3.11"
 services:
   iki_diff_base:
-    image: ghcr.io/rwu-r2m/r2m_diff_bot:latest
+    image: ghcr.io/rwu-r2m/r2m_4wd_diff_drive:latest
     container_name: iki_diff_base
     environment:
       DISPLAY: $DISPLAY
