@@ -3,7 +3,9 @@ name: Multi-Architecture Docker Build
 on:
   push:
     branches:
-      - 'main, dev, ci_update'
+      - 'main'
+      - 'dev'
+      - 'ci_update'
 
 permissions:
   contents: read
