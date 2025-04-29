@@ -52,10 +52,6 @@ install(
   DESTINATION share/ros2_control_demo_example_2
 )
 install(
-  DIRECTORY ros2_control
-  DESTINATION share/ros2_control_demo_example_2
-)
-install(
   DIRECTORY bringup/launch bringup/config
   DESTINATION share/ros2_control_demo_example_2
 )

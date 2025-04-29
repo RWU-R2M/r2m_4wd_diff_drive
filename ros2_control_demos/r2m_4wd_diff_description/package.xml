@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>ros2_control_demo_description</name>
+  <name>r2m_4wd_diff_description</name>
   <version>0.0.0</version>
-  <description>Package with URDF and description files of test robots.</description>
+  <description>Package with URDF and description files of R2M 4wd diffbot</description>
 
   <maintainer email="denis@stogl.de">Denis Štogl</maintainer>
   <maintainer email="christoph.froehlich@ait.ac.at">Christoph Fröhlich</maintainer>
