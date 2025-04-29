@@ -2,12 +2,10 @@
 
 ## Build Status
 
-| Build Step | Status |
-|------------|--------|
-| Overall Build | [![Multi-Architecture Docker Build](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml/badge.svg)](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml) |
-| AMD64 Build | [![AMD64 Build Status](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml/badge.svg?job=build-push-amd64)](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml) |
-| ARM64 Build | [![ARM64 Build Status](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml/badge.svg?job=build-push-arm64)](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml) |
-| Multi-Arch Manifest | [![Multi-Arch Manifest](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml/badge.svg?job=create-manifests)](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml) |
+| Branch | Build Status |
+|--------|--------------|
+| main | [![Main Branch Build](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml/badge.svg?branch=main)](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml) |
+| dev | [![Dev Branch Build](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml/badge.svg?branch=dev)](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml) |
 
 ## Project Overview
 
