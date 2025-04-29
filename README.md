@@ -1,4 +1,4 @@
-# R2M 4WD Differential Drive Robot
+# R2M 4WD Differential Drive Bot
 
 ## Build Status
 
