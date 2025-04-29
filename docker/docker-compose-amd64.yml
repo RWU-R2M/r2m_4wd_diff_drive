@@ -1,0 +1,24 @@
+version: "3.11"
+services:
+  humble_amd64:
+    image: ghcr.io/rwu-r2m/ros_raspi:amd64
+    platform: linux/amd64
+    environment:
+        ROS_DOMAIN_ID: 1
+        DISPLAY: $DISPLAY
+        NVIDIA_VISIBLE_DEVICES: all
+        NVIDIA_DRIVER_CAPABILITIES: compute,video,utility,graphics
+    network_mode: host
+    stdin_open: true
+    privileged: true
+    volumes:
+        - /tmp/.X11-unix:/tmp/.X11-unix
+        - $HOME/.Xauthority:/root/.Xauthority
+        - /dev:/dev
+        - ../src:/root/ros2_ws/src  # Single source mount
+    command: >
+      /bin/bash -c "
+        cd /root/ros2_ws/src &&
+        git submodule update --init --recursive &&
+        source /opt/ros/humble/setup.bash &&
+        exec bash"
