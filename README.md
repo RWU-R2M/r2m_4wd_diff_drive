@@ -4,8 +4,8 @@
 
 | Branch | Build Status |
 |--------|--------------|
-| main | [![Main Branch Build](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml/badge.svg?branch=main)](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml) |
-| dev | [![Dev Branch Build](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml/badge.svg?branch=dev)](https://github.com/rwu-r2m/r2m_diff_bot/actions/workflows/docker-push.yml) |
+| main | [![Main Branch Build](https://github.com/rwu-r2m/r2m_4wd_diff_drive/actions/workflows/docker-push.yml/badge.svg?branch=main)](https://github.com/rwu-r2m/r2m_4wd_diff_drive/actions/workflows/docker-push.yml) |
+| dev | [![Dev Branch Build](https://github.com/rwu-r2m/r2m_4wd_diff_drive/actions/workflows/docker-push.yml/badge.svg?branch=dev)](https://github.com/rwu-r2m/r2m_4wd_diff_drive/actions/workflows/docker-push.yml) |
 
 ## Project Overview
 
