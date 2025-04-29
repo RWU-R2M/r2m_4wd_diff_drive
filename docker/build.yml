@@ -1,7 +1,7 @@
 version: '3.11'
 services:
   iki_diff_base:
-    image: fbe-dockerreg.rwu.de/prj-iki-ros2/robots/iki_diff_base
+    image: ghcr.io/rwu-r2m/r2m_diff_bot:latest
     build:
       context: ..
       dockerfile: docker/Dockerfile
