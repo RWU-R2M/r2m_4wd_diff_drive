@@ -5,10 +5,10 @@
   <xacro:arg name="use_mock_hardware" default="false" />
   <xacro:arg name="use_sim_time" default="false" />
 
-  <xacro:include filename="$(find r2m_4wd_diff_description)/r2m_4wd_diff_description/urdf/r2m_4wd_diff_description.urdf.xacro" />
+  <xacro:include filename="$(find r2m_4wd_diff_description)/urdf/r2m_4wd_diff_description.urdf.xacro" />
 
   <!-- Import Rviz colors -->
-  <!-- Materials are now referenced within the r2m_4wd_diff_description -->
+  <xacro:include filename="$(find r2m_4wd_diff_description)/urdf/diffbot.materials.xacro" />
 
   <!-- Import diffbot ros2_control description -->
   <xacro:include filename="$(find ros2_control_demo_example_2)/ros2_control/diffbot.ros2_control.xacro" />
