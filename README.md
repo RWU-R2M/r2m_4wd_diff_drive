@@ -56,6 +56,12 @@ docker compose -f docker/docker-compose.yml up
 
 If the simulation GUI fails to start, check that X server permissions are properly set. The `xhost local:user` command allows the Docker container to access your local X server for displaying GUI applications.
 
+If you can an unauthorized error, try logging out from the docker registry
+
+```bash
+docker logout ghcr.io
+```
+
 ## Start with real hardware:
 
 Connect to physical hardware components via CAN interface.
