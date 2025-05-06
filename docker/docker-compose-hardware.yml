@@ -16,6 +16,7 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - $HOME/.Xauthority:/root/.Xauthority
+      - /dev/shm:/dev/shm
       - ../ros2_control_demos:/root/ros2_ws/src/ros2_control_demos
     command:
         - bash
