@@ -53,7 +53,7 @@
         </hardware>
         <!-- Front left wheel - ODrive 0 -->
       <joint name="${prefix}front_left_wheel_joint">
-        <param name="node_id">0</param>
+        <param name="node_id">4</param>
         <command_interface name="velocity"/>
         <state_interface name="position"/>
         <state_interface name="velocity"/>
@@ -61,7 +61,7 @@
       
       <!-- Front right wheel - ODrive 1 -->
       <joint name="${prefix}front_right_wheel_joint">
-        <param name="node_id">1</param>
+        <param name="node_id">3</param>
         <command_interface name="velocity"/>
         <state_interface name="position"/>
         <state_interface name="velocity"/>
@@ -77,7 +77,7 @@
       
       <!-- Rear right wheel - ODrive 3 -->
       <joint name="${prefix}rear_right_wheel_joint">
-        <param name="node_id">3</param>
+        <param name="node_id">1</param>
         <command_interface name="velocity"/>
         <state_interface name="position"/>
         <state_interface name="velocity"/>
