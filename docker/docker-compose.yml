@@ -15,6 +15,7 @@ services:
     tty: true
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
+      - /dev/shm:/dev/shm
       - $HOME/.Xauthority:/root/.Xauthority
       - ../ros2_control_demos:/root/ros2_ws/src/ros2_control_demos
     command:
