@@ -13,7 +13,7 @@ documentation.
 import can
 import struct
 
-node_id = 4 # must match `<odrv>.axis0.config.can.node_id`. The default is 0.
+node_id = 1 # must match `<odrv>.axis0.config.can.node_id`. The default is 0.
 
 bus = can.interface.Bus("can0", bustype="socketcan")
 

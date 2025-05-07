@@ -191,7 +191,7 @@
   "axis0.trap_traj.config.vel_limit": 2.0,
   "can.config.baud_rate": 500000,
   "can.config.protocol": 1,
-  "config.dc_bus_overvoltage_trip_level": 16.799999237060547,
+  "config.dc_bus_overvoltage_trip_level": 16.8,
   "config.dc_bus_undervoltage_trip_level": 14.0,
   "config.dc_max_negative_current": -Infinity,
   "config.dc_max_positive_current": Infinity,
