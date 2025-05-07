@@ -18,8 +18,8 @@ diffbot_base_controller:
     wheel_radius: 0.075  # Updated wheel radius
 
     wheel_separation_multiplier: 1.0
-    left_wheel_radius_multiplier: 1.0
-    right_wheel_radius_multiplier: 1.0  # Changed from -1.0 to match wheel direction
+    left_wheel_radius_multiplier: 0.02
+    right_wheel_radius_multiplier: -0.02  # Changed from -1.0 to match wheel direction
 
     publish_rate: 50.0
     odom_frame_id: odom
@@ -27,7 +27,7 @@ diffbot_base_controller:
     pose_covariance_diagonal : [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
     twist_covariance_diagonal: [0.001, 0.001, 0.001, 0.001, 0.001, 0.01]
 
-    open_loop: true
+    open_loop: false
     enable_odom_tf: true
 
     cmd_vel_timeout: 0.5
