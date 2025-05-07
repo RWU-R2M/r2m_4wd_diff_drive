@@ -2,7 +2,7 @@ version: "3.11"
 services:
   iki_diffr2m_4wd_diff_drive_base:
     image: ghcr.io/rwu-r2m/r2m_4wd_diff_drive:dev
-    container_name: r2m_4wd_diff_drive
+    container_name: r2m_4wd_diff_drive_odrive
     environment:
       DISPLAY: $DISPLAY
       ROS_DOMAIN_ID: $ROS_DOMAIN_ID
