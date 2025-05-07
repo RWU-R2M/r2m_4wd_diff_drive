@@ -1,0 +1,54 @@
+version: "3.11"
+services:
+  iki_diffr2m_4wd_diff_drive_base:
+    image: ghcr.io/rwu-r2m/r2m_4wd_diff_drive:dev
+    container_name: r2m_4wd_diff_drive_odrive
+    environment:
+      DISPLAY: $DISPLAY
+      ROS_DOMAIN_ID: $ROS_DOMAIN_ID
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,video,utility,graphics
+      QT_X11_NO_MITSHM: '1'
+    network_mode: host
+    privileged: true
+    stdin_open: true
+    tty: true
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority
+      - /dev/shm:/dev/shm
+      - ../ros2_control_demos:/root/ros2_ws/src/ros2_control_demos
+    command:
+        - bash
+        - -c
+        - |
+          source /opt/ros/jazzy/setup.bash
+          source /root/ros2_ws/install/setup.bash
+          ros2 launch ros2_control_demo_example_2 diffbot.launch.py
+  joy2twist:
+    image: ghcr.io/rwu-r2m/r2m_joysticks:latest
+    container_name: r2m_joy2sticks
+    environment:
+      DISPLAY: $DISPLAY
+      ROS_DOMAIN_ID: $ROS_DOMAIN_ID
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,video,utility,graphics
+      QT_X11_NO_MITSHM: '1'
+    network_mode: host
+    privileged: true
+    stdin_open: true
+    tty: true
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/root/.Xauthority
+      - /dev/shm:/dev/shm
+      - ../joy_config/joy2twist.yaml:/joy2twist.yaml
+    command:
+      - bash
+      - -c
+      - |
+        source /opt/ros/jazzy/setup.bash
+        source /ros_entrypoint.sh
+        source /ros2_ws/install/setup.bash
+        ros2 launch joy2twist gamepad_controller.launch.py joy2twist_params_file:=/joy2twist.yaml
+
