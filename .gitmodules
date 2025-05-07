@@ -1,0 +1,3 @@
+[submodule "r2m_joysticks"]
+	path = r2m_joysticks
+	url = https://github.com/RWU-R2M/r2m_joysticks.git
